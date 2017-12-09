@@ -1,4 +1,5 @@
 # Running separate graphs
+# Not recommended, use separate subgraphs in a same graph
 import os
 import tensorflow as tf
 
