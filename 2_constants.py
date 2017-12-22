@@ -19,11 +19,26 @@ p2 = tf.range(3, 18, 0.5)
 p3 = tf.range(6)
 
 # Randomly Generated Constants
-# s1 = tf.random_normal(shape, mean=0.0, stddev=1.0, dtype=tf.float32, seed=None, name=None)
+# tf.random_normal(shape, mean=0.0, stddev=1.0, dtype=tf.float32, seed=None, name=None)
 s1 = tf.random_normal([1,2,3])
-# s2 = tf.truncated_normal(shape, mean=0.0, stddev=1.0, dtype=tf.float32, seed=None, name=None)
+# tf.truncated_normal(shape, mean=0.0, stddev=1.0, dtype=tf.float32, seed=None, name=None)
 s2 = tf.truncated_normal([1,2,3])
+# tf.random_uniform(shape, minval=0, maxval=None, dtyple=tf.float32, seed=None, name=None)
+s3 = tf.random_uniform([1,2])
+# tf.random_shuffle(value, seed=None, name=None)
+s4 = tf.random_shuffle(4)
+# tf.random_crop(value, size, seed=None, name=None)
+s5 = tf.random_crop(123, 12)
+# tf.multinomial(logits, num_samples, seed=None, name=None)
+# FILL THIS
+# tf.random_gamma(shape, alpha, beta=None, dtype=tf.float32, seed=None, name=None)
+# FILL THIS
+# tf.set_random_seed(seed)
+# FILL THIS
 
+# Note on Constants
+# Constants are stored in the graph definition. THis makes loading graphs expensive when constants are big.
+# Use constants for primitive datatypes. Use variables/readers for memory-heavy data
 
 with tf.Session() as sess:
 	#activating Tensorboard
