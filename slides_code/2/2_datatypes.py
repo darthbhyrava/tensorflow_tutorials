@@ -1,6 +1,7 @@
 import os
 import tensorflow as tf
 
+#tensorflow takes python native types: boolean, numeric, strings
 # Filter out warnings
 os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 
@@ -18,6 +19,6 @@ s4 = tf.zeros_like(t_2)
 s5 = tf.ones_like(t_2)
 
 with tf.Session() as sess:
-	s1, s2 = sess.run([s5,s4])
+	s1, s2 = sess.run([s4,s5])
 	print s1, s2
 
