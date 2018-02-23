@@ -3,13 +3,13 @@ TensorfFlow is an open source software library for numerical computation using d
 
 ### Contents
 
-#### #1
-Tensors, Sessions, Graphs and Sub Graphs (with a reference to Distributed Computation)
+- 1
+	Tensors, Sessions, Graphs and Sub Graphs (with a reference to Distributed Computation)
 
-#### #2
-TensorBoard, Constants, Basic Operations, Data Types, Variables, Interactive Sessions, Control Dependencies.
+- 2
+	TensorBoard, Constants, Basic Operations, Data Types, Variables, Interactive Sessions, Control Dependencies, Feed Dicts and Lazy Loading._Get acquainted with randomly generated constants._
+- 3
+	
 
-
-_Get acquainted with randomly generated constants._
 
 
